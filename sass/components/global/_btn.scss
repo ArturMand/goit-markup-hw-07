@@ -44,6 +44,7 @@
   background-color: $second-bgc;
   border-radius: 4px;
   transition: $cubic;
+  box-shadow: none;
 
   &:hover,
   &:focus {

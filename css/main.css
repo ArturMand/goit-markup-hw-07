@@ -298,7 +298,7 @@ body {
   line-height: 1.35;
 }
 
-.features__description, .benefits__description, .client-form .label-policy {
+.features__description, .benefits__description, .client-form__label-policy {
   font-weight: 400;
   font-size: 0.875em;
   line-height: 1.71;
@@ -334,13 +334,34 @@ body {
   text-transform: uppercase;
 }
 
-.clients, .social, .team, .features, .benefits {
+.overlay__text {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+.work-list__name {
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-list__descr {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.work-list, .list-filter, .clients, .social, .team, .features, .benefits {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.address__link {
+.work-list__link, .address__link {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -490,15 +511,6 @@ body {
   outline: transparent;
 }
 
-.client-form > label > .label-title {
-  margin-bottom: 0.3em;
-  font-weight: 400;
-  font-size: 0.8em;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: var(--second-text-color);
-}
-
 .icon-form {
   position: absolute;
   top: 50%;
@@ -508,14 +520,15 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-form .label-policy {
+.client-form__label-policy {
   display: inline-flex;
   align-items: center;
+  margin-top: 10px;
   margin-bottom: 30px;
   color: #757575;
 }
 
-.icon-checkbox {
+.client-form__icon-checkbox {
   display: inline-block;
   align-self: center;
   margin-right: 8px;
@@ -525,7 +538,7 @@ body {
   border-radius: 2px;
 }
 
-.input-policy:checked + .icon-checkbox {
+.client-form__input-policy:checked + .client-form__icon-checkbox {
   background-image: url(../image/svg/icon-checkbox.svg);
   background-size: contain;
   background-color: #2196f3;
@@ -533,9 +546,29 @@ body {
   border-color: transparent;
 }
 
-.link-policy {
+.client-form__link-policy {
   margin-left: 5px;
   color: #2196f3;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header--border {
@@ -726,6 +759,7 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
 }
 .btn-portfolio:hover, .btn-portfolio:focus {
   color: #ffffff;
@@ -975,6 +1009,10 @@ body {
   margin-top: 8px;
 }
 
+.address__link--grey {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1001,4 +1039,64 @@ body {
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.list-filter {
+  display: flex;
+  margin-bottom: 3.125em;
+  justify-content: center;
+}
+
+.list-filter__item + .list-filter__item {
+  margin-left: 8px;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-list__item {
+  display: inline-block;
+  width: calc((100% - 60px) / 3);
+  background: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.work-list__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.work-list__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.work-list__item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 30px;
+}
+
+.work-list__link:hover .overlay__text, .work-list__link:focus .overlay__text {
+  transform: translateY(0);
+}
+
+.work-list__img {
+  display: block;
+}
+
+.work-list__meta {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: 1px solid #eeeeee;
+}
+
+.work-list__name {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  color: #212121;
+}
+
+.work-list__descr {
+  margin: 0;
+  padding: 0;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */

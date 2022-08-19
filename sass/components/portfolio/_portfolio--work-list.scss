@@ -1,0 +1,56 @@
+.work-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list__item {
+  display: inline-block;
+  width: calc((100% - 60px) / 3);
+  background: $white-color;
+  transition: $cubic;
+
+  &:hover{
+    box-shadow: $shadow-portf-work-list__link;
+  }
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+.work-list__link {
+  @extend %link;
+  
+  &:hover .overlay__text,
+  &:focus .overlay__text {
+    transform: translateY(0);
+  }
+
+}
+
+.work-list__img {
+  display: block;
+}
+
+.work-list__meta {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: 1px solid $portf-work-descr-border;
+}
+.work-list__name {
+  @extend %fonts-work-list__name;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  color: $primary-text-color;
+}
+.work-list__descr {
+  @extend %fonts-work-list__descr;
+  margin: 0;
+  padding: 0;
+  color: $second-text-color;
+}

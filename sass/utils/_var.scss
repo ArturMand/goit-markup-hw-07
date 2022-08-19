@@ -15,6 +15,7 @@ $form-input-subscr-border: rgba(255, 255, 255, 0.3);
 $form-input-border: rgba(33, 33, 33, 0.2);
 $form-btn-act-bgc: #188ce8;
 $form-btn-cls-border: rgba(0, 0, 0, 0.1);
+$portf-work-descr-border: #eeeeee;
 
 // box-shadow
 $shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -26,6 +27,8 @@ $shadow-team-list: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.
   0px 2px 1px rgba(0, 0, 0, 0.2);
 $shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
+$shadow-portf-work-list__link: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 
 // Font-weight
 $regular: 400;
@@ -61,18 +64,18 @@ $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-%fonts-client-form__title{
-    font-weight: $bold;
-    font-size: $font-semibold;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+%fonts-client-form__title {
+  font-weight: $bold;
+  font-size: $font-semibold;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-%fonts-client-form__label{
-    font-weight: $regular;
-    font-size: $font-extralight;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
+%fonts-client-form__label {
+  font-weight: $regular;
+  font-size: $font-extralight;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 // fonts
 %fonts-header {
@@ -131,6 +134,24 @@ $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+%fonts-overlay-text {
+  font-weight: $regular;
+  font-size: $font-medium;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+%fonts-work-list__name {
+  font-weight: $bold;
+  font-size: $font-medium;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+%fonts-work-list__descr {
+  font-weight: $regular;
+  font-size: $font-regular;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 // list link
 %list {

@@ -1,0 +1,11 @@
+.list-filter {
+  @extend %list;
+  display: flex;
+  margin-bottom: 3.125em;
+  justify-content: center;
+}
+.list-filter__item {
+  & + & {
+    margin-left: 8px;
+  }
+}
