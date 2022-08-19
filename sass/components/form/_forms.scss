@@ -39,13 +39,10 @@
   flex-direction: column;
   color: $second-text-color;
 
-  &:last-child {
-    margin-bottom: 20px;
-  }
   &:hover .client-form__input {
     border-color: $accent-color;
   }
-  .client-form__label--last {
+  &.client-form__label--last {
     margin-bottom: 20px;
   }
 }
@@ -111,7 +108,6 @@
   @extend %fonts-description;
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
   margin-bottom: 30px;
   color: $second-text-color;
 }

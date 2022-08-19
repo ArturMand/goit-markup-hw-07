@@ -291,14 +291,14 @@ body {
 }
 
 .section-hero__title {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 2.75em;
   line-height: 1.35;
 }
 
-.features__description, .benefits__description, .client-form__label-policy {
+.benefits__description, .client-form__label-policy {
   font-weight: 400;
   font-size: 0.875em;
   line-height: 1.71;
@@ -324,9 +324,10 @@ body {
   font-size: 0.875em;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
-.title-join {
+.features__description, .title-join {
   font-weight: 700;
   font-size: 0.875em;
   line-height: 1.2;
@@ -454,13 +455,10 @@ body {
   flex-direction: column;
   color: #757575;
 }
-.client-form__label:last-child {
-  margin-bottom: 20px;
-}
 .client-form__label:hover .client-form__input {
   border-color: #2196f3;
 }
-.client-form__label .client-form__label--last {
+.client-form__label.client-form__label--last {
   margin-bottom: 20px;
 }
 
@@ -523,7 +521,6 @@ body {
 .client-form__label-policy {
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
   margin-bottom: 30px;
   color: #757575;
 }
@@ -809,16 +806,16 @@ body {
   background-position: center;
 }
 .benefits__list:nth-child(1)::before {
-  background-image: url(../image/svg/benefits/1.svg);
+  background-image: url(../image/svg/benefits/icon-1.svg);
 }
 .benefits__list:nth-child(2)::before {
-  background-image: url(../image/svg/benefits/2.svg);
+  background-image: url(../image/svg/benefits/icon-2.svg);
 }
 .benefits__list:nth-child(3)::before {
-  background-image: url(../image/svg/benefits/3.svg);
+  background-image: url(../image/svg/benefits/icon-3.svg);
 }
 .benefits__list:nth-child(4)::before {
-  background-image: url(../image/svg/benefits/4.svg);
+  background-image: url(../image/svg/benefits/icon-4.svg);
 }
 
 .sub-title--benefits {
@@ -848,16 +845,13 @@ body {
   margin-right: 30px;
 }
 .features__list:nth-child(1) {
-  background-image: url(../image/Main/do/1.jpg);
+  background-image: url(../image/Main/do/box1.jpg);
 }
 .features__list:nth-child(2) {
-  background-image: url(../image/Main/do/2.jpg);
+  background-image: url(../image/Main/do/box2.jpg);
 }
 .features__list:nth-child(3) {
-  background-image: url(../image/Main/do/3.jpg);
-}
-.features__list:nth-child(4) {
-  background-image: url(../image/Main/do/4.jpg);
+  background-image: url(../image/Main/do/box3.jpg);
 }
 
 .features__description {

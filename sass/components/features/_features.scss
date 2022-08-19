@@ -14,16 +14,17 @@
         margin-right: 30px;
       }
 
-    $child-num: "1", "2", "3", "4";
+    $child-num: "1", "2", "3";
     @each $num in $child-num{
       &:nth-child(#{$num}){
-          background-image: url(../image/Main/do/#{$num}.jpg);
+          background-image: url(../image/Main/do/box#{$num}.jpg);
       }
     }
-
 }
+
+
 .features__description {
-    @extend %fonts-description;
+    @extend %fonts-title-join;
     position: absolute;
     left: 0;
     bottom: 0;

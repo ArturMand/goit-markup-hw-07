@@ -34,6 +34,7 @@ $shadow-portf-work-list__link: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba
 $regular: 400;
 $medium: 500;
 $bold: 700;
+$black: 900;
 
 // Font-size
 $font-extralight: 0.75em;
@@ -96,7 +97,7 @@ $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 %fonts-hero {
-  font-weight: $bold;
+  font-weight: $black;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: $font-black;
@@ -127,6 +128,7 @@ $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: $font-light;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 %fonts-title-join {
   font-weight: $bold;

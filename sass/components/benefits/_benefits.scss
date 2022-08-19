@@ -24,7 +24,7 @@
     $child-num: "1", "2", "3", "4";
   @each $num in $child-num{
     &:nth-child(#{$num})::before{
-        background-image: url(../image/svg/benefits/#{$num}.svg);
+        background-image: url(../image/svg/benefits/icon-#{$num}.svg);
     }
   }
 
