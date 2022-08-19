@@ -1,0 +1,18 @@
+.logo {
+  @extend %fonts-logo;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.88em;
+  padding-bottom: 0.88em;
+  color: $accent-color;
+}
+.logo__color--page-header {
+  color: $primary-text-color;
+}
+.logo__color--page-footer {
+  color: $white-color;
+}
+.logo--page-footer{
+  padding: 0;
+
+}

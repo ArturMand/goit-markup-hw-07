@@ -1,0 +1,41 @@
+.benefits {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits__list {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &::before {
+    content: '';
+    margin-bottom: 30px;
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+    $child-num: "1", "2", "3", "4";
+  @each $num in $child-num{
+    &:nth-child(#{$num})::before{
+        background-image: url(../image/svg/benefits/#{$num}.svg);
+    }
+  }
+
+}
+.sub-title--benefits {
+  margin-bottom: 0.75em;
+  color: $primary-text-color;
+}
+.benefits__description {
+  @extend %fonts-description;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $second-text-color;
+}

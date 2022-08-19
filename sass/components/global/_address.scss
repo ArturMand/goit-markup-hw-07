@@ -1,0 +1,7 @@
+.address {
+    @extend %fonts-address;
+}
+.address__link {
+    @extend %link;
+    color: $white-color;
+}

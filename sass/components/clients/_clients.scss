@@ -1,0 +1,29 @@
+.clients {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients__list {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: $svg-primary-color;
+  border: 1px solid $svg-primary-color;
+  border-radius: 4px;
+  transition: $cubic;
+
+  &:hover,
+  &focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.clients__logo {
+}

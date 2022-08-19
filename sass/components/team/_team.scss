@@ -1,0 +1,36 @@
+.section--bgc{
+    background-color: $second-bgc;
+}
+.team {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+}
+.team__list {
+    background-color: $white-color;
+    box-shadow: $shadow-team-list;
+    border-radius: 0px 0px 4px 4px;
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.team__photo {
+    display: block;
+}
+.team__meta {
+    padding: 1.875em;
+    text-align: center;
+}
+.team__name {
+    @extend %fonts-team__name;
+    margin-top: 0;
+    margin-bottom: 0.625em;
+    color: $primary-text-color;
+}
+.team__position {
+    @extend %fonts-team-pos;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: $second-text-color;
+}

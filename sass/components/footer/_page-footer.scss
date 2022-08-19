@@ -1,0 +1,32 @@
+.page-footer {
+  padding: 3.75em 0;
+  background-color: $primary-bgc;
+}
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.page-footer__item {
+  &:not(:first-child) {
+    margin-left: auto;
+    margin-top: 12px;
+  }
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.address--page-footer {
+  display: inline-flex;
+  flex-direction: column;
+}
+.address__link--page-footer {
+  &:first-child {
+    margin-top: 20px;
+  }
+  &:not(:first-child) {
+    margin-top: 8px;
+  }
+}

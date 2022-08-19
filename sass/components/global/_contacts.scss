@@ -1,0 +1,32 @@
+.contact {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  align-content: baseline;
+}
+.contact__link {
+  @extend %fonts-header;
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $second-text-color;
+  margin: 0;
+  transition: $cubic;
+
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+.contact__link--anim {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contact__icon {
+  align-self: center;
+  margin-right: 0.625em;
+}

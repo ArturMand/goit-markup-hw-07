@@ -1,0 +1,20 @@
+.title{
+    @extend %fonts-title;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    text-align: center;
+    color: $primary-text-color;
+}
+.sub-title{
+    @extend %fonts-sub-title;
+    margin: 0;
+    padding: 0;
+}
+.title-join{
+    @extend %fonts-title-join;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: $white-color;
+}

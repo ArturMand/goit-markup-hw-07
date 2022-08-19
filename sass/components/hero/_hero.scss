@@ -1,0 +1,23 @@
+.section-hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 12.5em;
+    padding-bottom: 12.5em;
+    background-color: $primary-bgc;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/Main/intro/bg-intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+  .section-hero__title{
+    @extend %fonts-hero;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0.68em;
+    max-width: 650px;
+    color: $white-color;
+  }
